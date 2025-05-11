@@ -1,0 +1,43 @@
+.model{
+  width: 540px;
+  height: 235px;
+  border-radius: 10px;
+  background: rgb(244, 247, 251);
+  padding: 32px 40px;
+  position: relative;
+  overflow: hidden;
+  &__link{
+    color: rgb(111, 115, 238);
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 20px;
+  }
+  &__title{
+    color: rgb(40, 39, 57);
+    font-size: 25px;
+    font-weight: 600;
+    line-height: 36px;
+    text-transform: uppercase;
+    width: 240px;
+  }
+  &__subtitle{
+    color: rgb(40, 39, 57);
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 23px;
+    padding: 14px 0 22px;
+    width: 270px;
+  }
+  &__img{
+    position: absolute;
+    right: -50px;
+    bottom: 0;
+    z-index: 3;
+  }
+  &__elipse{
+    position: absolute;
+    right: -240px;
+    top: -50px;
+    z-index: 1;
+  }
+}

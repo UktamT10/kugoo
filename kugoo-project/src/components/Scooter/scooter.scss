@@ -1,0 +1,77 @@
+.scooter{
+  width: 255px;
+  height: 492px;
+  border: 1.5px solid rgb(234, 235, 237);
+  border-radius: 10px;
+  &__title{
+    color: rgb(40, 39, 57);
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 26px;
+    padding-top: 20px;
+  }
+  &__describe{
+    display: flex;
+    column-gap: 80px;
+    padding: 20px 0;
+  }
+  &__blockText{
+    color: rgb(93, 108, 123);
+    font-size: 17px;
+    font-weight: 400;
+    line-height: 16px;
+    padding-bottom: 10px;
+  }
+  &__priceText{
+    color: rgb(40, 39, 57);
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 29px;
+  }
+  &__price{
+    display: flex;
+    column-gap: 45px;
+    align-items: center;
+  }
+  &__priceIcons{
+    display: flex;
+    align-items: center;
+    column-gap: 10px;
+  }
+  &__btn{
+    cursor: pointer;
+    color: rgb(255, 255, 255);
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 17px;
+    padding: 10px 20px;
+    border-radius: 5px;
+    background: rgb(111, 115, 238);
+    border: none;
+    margin: 20px 0;
+    width: 100%;
+  }
+  &__icon{
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+  }
+  &__content{
+    padding: 20px;
+    border-top: 1.5px solid rgb(234, 235, 237);
+  }
+  &__iconss{
+    border: 1.5px solid rgb(234, 235, 237);
+    border-radius: 50%;
+    padding: 7px;
+    width: 40px;
+    height: 40px;
+  }
+  &__iconsss{
+    border: 1.5px solid green;
+    border-radius: 50%;
+    padding: 7px;
+    width: 40px;
+    height: 40px;
+  }
+}

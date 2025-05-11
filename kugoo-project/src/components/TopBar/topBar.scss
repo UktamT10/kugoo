@@ -1,0 +1,30 @@
+.topBar{
+  display : flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 0;
+  border-bottom: 1px solid rgb(236, 243, 255);
+  &__link{
+    color: rgb(93, 108, 123);
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 17px;
+  }
+  &__number{
+    color: rgb(40, 39, 57);
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 17px;
+  }
+  &__ul {
+    display: flex;
+    align-items: center;
+    column-gap: 20px
+  }
+  &__right{
+    display: flex;
+    align-items: center;
+    column-gap: 10px
+  }
+
+}
