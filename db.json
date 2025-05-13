@@ -8,17 +8,20 @@
     {
       "id":  1,
       "name":  "Робот-Пылесосы",
-      "image": "/images/woman.png"
+      "image": "/images/woman.png",
+      "price": "29999"
     },
     {
       "id":  2,
       "name":  "Электровелосипед",
-      "image": "/images/moped.png"
+      "image": "/images/moped.png",
+      "price": "39999"
     },
     {
       "id":  3,
       "name":  "Весы",
-      "image": "/images/weight.png"
+      "image": "/images/weight.png",
+      "price": "19999"
     }
   ],
   "bikes": [

@@ -1,0 +1,64 @@
+.catalog{
+  &__catalog-card{
+    padding: 20px 20px 40px;
+    box-sizing: border-box;
+    border: 1px solid rgb(234, 235, 237);
+    border-radius: 10px;
+    width: 350px;
+    height: 245px;
+  }
+  &__cardTitle{
+    color: black;
+    font-size: 22px;
+    font-weight: 400;
+    line-height: 26px;
+    padding: 21px 0;
+  }
+  &__catalogs{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    column-gap: 10px;
+  }
+  &__title{
+    color: rgb(40, 39, 57);
+    font-size: 35px;
+    font-weight: 600;
+    line-height: 51px;
+    text-align: center;
+    text-transform: uppercase;
+  }
+  &__subtitle{
+    color: rgb(40, 39, 57);
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 29px;
+    text-align: center;
+    padding: 25px 0 50px;
+  }
+  &__btns{
+    display: flex;
+    align-items: center;
+    column-gap: 20px;
+    justify-content: center;
+    margin-bottom: 50px;
+  }
+  &__btn{
+    box-sizing: border-box;
+    border: 1.3px solid rgb(111, 115, 238);
+    border-radius: 5px;
+    background: transparent;
+    padding: 15px 25px;
+    color: rgb(111, 115, 238);
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 23px;
+    cursor: pointer;
+    &__disactive{
+      color: rgb(93, 108, 123);
+      border-radius: 5px;
+      background: rgb(244, 247, 251);
+      border: none;
+    }
+  }
+}

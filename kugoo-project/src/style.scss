@@ -78,3 +78,20 @@
     justify-content: space-between;
     align-items: center;
 }
+h5{
+    cursor: pointer;
+}
+.popular-category{
+    color: rgb(40, 39, 57);
+    font-size: 35px;
+    font-weight: 600;
+    line-height: 51px;
+    text-transform: uppercase;
+    letter-spacing: 0;
+    margin: 100px 0;
+}
+.popular{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}

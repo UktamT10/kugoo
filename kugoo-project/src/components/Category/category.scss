@@ -1,4 +1,29 @@
 .category {
   width: 277px;
   height: 264px;
+  border-radius: 10px;
+  overflow: hidden;
+  padding: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: end;
+  &__title{
+    color: rgb(255, 255, 255);
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 26px;
+  }
+  &__subtitle{
+    color: rgb(255, 255, 255);
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 20px;
+  }
+  &__text{
+    border-radius: 10px;
+    backdrop-filter: blur(10px);
+    background: rgba(0, 0, 0, 0.2);
+    padding: 5px;
+    width: 100%;
+  }
 }

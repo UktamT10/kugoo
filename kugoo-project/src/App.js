@@ -6,6 +6,8 @@ import Model from './components/Model/Model';
 import axios from 'axios';
 import Kirin from "./components/Kirin/Kirin";
 import Category from "./components/Category/Category";
+import Manager from "./components/Manager/Manager";
+import Catalog from "./components/Catalog/Catalog";
 
 function App() {
     const [bikes, setBikes] = useState([]);
@@ -79,6 +81,7 @@ function App() {
                             </h5>
                             {category.map((item) => (
                                 <h5
+                                    style={{cursor: "pointer"}}
                                     key={item.id}
                                     onClick={() => setSelectedCategory(item.name)}
                                     className={selectedCategory === item.name ? 'active' : ''}
@@ -106,7 +109,7 @@ function App() {
                                 isInCart={cartItems.some(item => item.id === bike.id)}
                             />
                         ))}
-                        {more && bikesTwo.map((bike) => (
+                        {more && filteredItems.map((bike) => (
                             <Scooter
                                 key={bike.id}
                                 title={bike.title}
@@ -139,14 +142,22 @@ function App() {
                             image='/images/stupidWoman.png'
                         />
                     </div>
+                    <div className="popular">
+                        <h2 className="popular-category">
+                            Популярные категории
+                        </h2>
+                        <Manager/>
+                    </div>
                     <div className="categoriez">
                         {categoryez.map((item) => (
                             <Category
                                 image={item.image}
                                 title={item.name}
+                                price={item.price}
                             />
                         ))}
                     </div>
+                    <Catalog/>
                 </main>
             </div>
         </>
