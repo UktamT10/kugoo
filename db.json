@@ -1,27 +1,42 @@
 {
   "categories": [
-    { "id": 1, "name": "Для детей" },
-    { "id": 2, "name": "Для взрослых" },
-    { "id": 3, "name": "Для города" }
+    {
+      "id": "1",
+      "name": "Для детей"
+    },
+    {
+      "id": "2",
+      "name": "Для взрослых"
+    },
+    {
+      "id": "3",
+      "name": "Для города"
+    },
+    {
+      "id": "79ba"
+    }
   ],
   "categoryz": [
     {
-      "id":  1,
-      "name":  "Робот-Пылесосы",
+      "id": "1",
+      "name": "Робот-Пылесосы",
       "image": "/images/woman.png",
-      "price": "29999"
+      "price": "29999",
+      "peculiarities": "крутой"
     },
     {
-      "id":  2,
-      "name":  "Электровелосипед",
+      "id": "2",
+      "name": "Электровелосипед",
       "image": "/images/moped.png",
-      "price": "39999"
+      "price": "39999",
+      "peculiarities": "внедорожный"
     },
     {
-      "id":  3,
-      "name":  "Весы",
+      "id": "3",
+      "name": "Весы",
       "image": "/images/weight.png",
-      "price": "19999"
+      "price": "19999",
+      "peculiarities": "прочные"
     }
   ],
   "bikes": [
@@ -32,7 +47,7 @@
       "acc": "7500mAh",
       "weight": "11.9kg",
       "mileage": "30km",
-      "price": "20000",
+      "price": 20000,
       "img": "https://kugoo.kg/storage/vehicles/December2021/XE0cGLkcHYM6Zjqhe54X.jpg",
       "category": "Хит",
       "for": "Для детей"
@@ -44,7 +59,7 @@
       "acc": "13000mAh",
       "weight": "20kg",
       "mileage": "45km",
-      "price": "47000",
+      "price": 47000,
       "img": "https://kugoo.kg/storage/vehicles/March2023/d0VDunX253UUtFxuQpes.jpg",
       "category": "Новинка",
       "for": "Для взрослых"
@@ -56,7 +71,7 @@
       "acc": "18000mAh",
       "weight": "25kg",
       "mileage": "50km",
-      "price": "53000",
+      "price": 53000,
       "img": "https://kugoo.kg/storage/vehicles/July2023/jW46q1hoVEkMGwx5EZkJ.jpg",
       "category": "Хит",
       "for": "Для города"
@@ -68,7 +83,7 @@
       "acc": "13000mAh",
       "weight": "31kg",
       "mileage": "60km",
-      "price": "70000",
+      "price": 70000,
       "img": "https://kugoo.kg/storage/vehicles/December2021/SHr0cHTm9tCtD5IlqJrd.jpg",
       "category": "Новинка",
       "for": "Для детей"
@@ -80,7 +95,7 @@
       "acc": "17000mAh",
       "weight": "24kg",
       "mileage": "33km",
-      "price": "75000",
+      "price": 75000,
       "img": "https://kugoo.kg/storage/vehicles/February2025/Gqv47QOwm8kKw4vuiWfT.webp",
       "category": "Хит",
       "for": "Для детей"
@@ -92,7 +107,7 @@
       "acc": "1900mAh",
       "weight": "30kg",
       "mileage": "85km",
-      "price": "40000",
+      "price": 40000,
       "img": "https://kugoo.kg/storage/vehicles/February2025/KJsiuLKkbAhxV5fUmHoi.jpg",
       "category": "Новинка",
       "for": "Для взрослых"
@@ -104,7 +119,7 @@
       "acc": "7000mAh",
       "weight": "51kg",
       "mileage": "95km",
-      "price": "40000",
+      "price": 40000,
       "img": "https://kugoo.kg/storage/vehicles/February2025/F2q3xtktanuEpewhwCtz.webp",
       "category": "Хит",
       "for": "Для города"
@@ -116,24 +131,25 @@
       "acc": "2000mAh",
       "weight": "19kg",
       "mileage": "15km",
-      "price": "37000",
+      "price": 37000,
       "img": "https://kugoo.kg/storage/vehicles/February2025/TKCEtpfsiAmwOfTEvsbs.webp",
       "category": "Новинка",
       "for": "Для взрослых"
     }
   ],
-  "bikesTwo": [{
-    "id": "9",
-    "title": "KuKirin G2 MASTER",
-    "power": "2000w",
-    "acc": "28000mAh",
-    "weight": "33.9kg",
-    "mileage": "70km",
-    "price": "97000",
-    "img": "https://kugoo.kg/storage/vehicles/February2025/mBSeYb29iK7dMk6VWBOZ.webp",
-    "category": "Хит",
-    "for": "Для взрослых"
-  },
+  "bikesTwo": [
+    {
+      "id": "9",
+      "title": "KuKirin G2 MASTER",
+      "power": "2000w",
+      "acc": "28000mAh",
+      "weight": "33.9kg",
+      "mileage": "70km",
+      "price": 97000,
+      "img": "https://kugoo.kg/storage/vehicles/February2025/mBSeYb29iK7dMk6VWBOZ.webp",
+      "category": "Хит",
+      "for": "Для взрослых"
+    },
     {
       "id": "10",
       "title": "KUGOO G1",
@@ -141,7 +157,7 @@
       "acc": "18200mAh",
       "weight": "33kg",
       "mileage": "60km",
-      "price": "105000",
+      "price": 105000,
       "img": "https://kugoo.kg/storage/vehicles/December2021/WQbWvokPbue7ZGQ4RWbv.jpg",
       "category": "Новинка",
       "for": "Для города"
@@ -153,7 +169,7 @@
       "acc": "35200mAh",
       "weight": "70kg",
       "mileage": "90km",
-      "price": "200000",
+      "price": 200000,
       "img": "https://kugoo.kg/storage/vehicles/February2025/V5Y0rpVBb7tWRX4JkpVL.webp",
       "category": "Хит",
       "for": "Для взрослых"
@@ -165,10 +181,37 @@
       "acc": "15000mAh",
       "weight": "25kg",
       "mileage": "50km",
-      "price": "62000",
+      "price": 62000,
       "img": "https://kugoo.kg/storage/vehicles/February2025/HjfEUHndYCzXRMsZwLyl.webp",
       "category": "Хит",
       "for": "Для детей"
     }
-  ]
+  ],
+  "reveiews": [
+    {
+      "id": "1",
+      "review": "https://optim.tildacdn.com/tild3132-6632-4462-b461-376131383631/-/format/webp/photo_2021-04-14_205.jpeg.webp"
+    },
+    {
+      "id": "2",
+      "review": "https://optim.tildacdn.com/tild3364-3566-4030-a366-393463623634/-/format/webp/photo_2021-04-07_223.jpeg.webp"
+    },
+    {
+      "id": "3",
+      "review": "https://optim.tildacdn.com/tild3534-3661-4163-b532-346134623865/-/format/webp/photo_2021-04-07_223.jpeg.webp"
+    },
+    {
+      "id": "4",
+      "review": "https://optim.tildacdn.com/tild3133-6365-4038-a339-643836656234/-/format/webp/photo_2021-04-07_223.jpeg.webp"
+    },
+    {
+      "id": "5",
+      "review": "https://optim.tildacdn.com/tild6137-3461-4663-b262-666238643564/-/format/webp/photo_2021-04-07_223.jpeg.webp"
+    },
+    {
+      "id": "6",
+      "review": "https://optim.tildacdn.com/tild3435-6466-4664-b630-356232373138/-/format/webp/photo_2021-04-07_223.jpeg.webp"
+    }
+  ],
+  "cart": []
 }

@@ -1,0 +1,26 @@
+.dropdown{
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  &__mainTitle{
+    color: rgb(40, 39, 57);
+    font-size: 35px;
+    font-weight: 600;
+    line-height: 51px;
+    text-align: center;
+    text-transform: uppercase;
+    margin: 67px 0;
+  }
+  &__title{
+    color: rgb(40, 39, 57);
+    font-size: 22px;
+    font-weight: 400;
+    line-height: 23px;
+  }
+  &__questions{
+    border-bottom: 1px solid rgb(234, 235, 237);
+    padding-bottom: 20px;
+    width: 700px;
+    margin-bottom: 30px;
+  }
+}

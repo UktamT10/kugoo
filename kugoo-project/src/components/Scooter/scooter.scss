@@ -1,6 +1,6 @@
 .scooter{
   width: 255px;
-  height: 492px;
+  height: 522px;
   border: 1.5px solid rgb(234, 235, 237);
   border-radius: 10px;
   &__title{
@@ -24,13 +24,11 @@
   }
   &__priceText{
     color: rgb(40, 39, 57);
-    font-size: 20px;
-    font-weight: 600;
-    line-height: 29px;
+    font-size: 18px;
   }
   &__price{
     display: flex;
-    column-gap: 45px;
+    column-gap: 25px;
     align-items: center;
   }
   &__priceIcons{
@@ -48,8 +46,8 @@
     border-radius: 5px;
     background: rgb(111, 115, 238);
     border: none;
-    margin: 20px 0;
     width: 100%;
+    margin-top: 10px;
   }
   &__icon{
     width: 200px;

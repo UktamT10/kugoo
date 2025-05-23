@@ -95,3 +95,53 @@ h5{
     justify-content: space-between;
     align-items: center;
 }
+
+.reviews{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    column-gap: 20px;
+    row-gap: 20px;
+    justify-content: center;
+    height: 800px;
+}
+.reviewImage{
+    width: 298px;
+    height: 304px;
+    border-radius: 10px;
+    object-fit: cover;
+}
+.swiper-wrapper{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.reviews-title{
+    color: rgb(40, 39, 57);
+    font-size: 35px;
+    font-weight: 600;
+    line-height: 51px;
+    text-align: center;
+    text-transform: uppercase;
+    margin-top: 84px;
+}
+.reviews-subtitle{
+    color: rgb(111, 115, 238);
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 20px;
+    text-align: center;
+    margin: 21px 0 54px;
+}
+.aften{
+    display: flex;
+    flex-wrap: wrap;
+}
+.afton-title{
+    color: rgb(40, 39, 57);
+    font-size: 35px;
+    font-weight: 600;
+    line-height: 51px;
+    text-align: center;
+    padding: 100px 0;
+}

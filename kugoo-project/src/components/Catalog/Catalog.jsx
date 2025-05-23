@@ -1,5 +1,6 @@
 import React from 'react';
 import "./catalog.scss"
+import {Link} from "react-router-dom";
 
 const Catalog = () => {
     const [catalog, setCatalog] = React.useState(false);
@@ -43,9 +44,11 @@ const Catalog = () => {
                         <div className="catalog__catalog-card">
                             <img src="/images/catalog.svg" alt=""/>
                             <h2 className='catalog__cardTitle'>
-                                Полная документация и гарантия 1 год
+                                Больше в сервисе
                             </h2>
-                            <p className="catalog__cardDescription">При покупке вам выдается кассовый чек, товарный чек и гарантийный талон – эти документы дают право на гарантийное обслуживание.</p>
+                            <Link to={'/service'}>
+                                <p className="catalog__cardDescription">Перейти</p>
+                            </Link>
                         </div>
                     </>
                     :

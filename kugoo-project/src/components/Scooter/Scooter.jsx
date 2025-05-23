@@ -1,7 +1,7 @@
 import React from 'react';
 import './scooter.scss'
 
-const Scooter = ({title,acc,power,mileage,weight,price,image,onPlus, isInCart, onRemove, category, forWho}) => {
+const Scooter = ({title,acc,power,mileage,weight,price,image,onPlus, isInCart, onRemove, category, forWho, }) => {
     const [basket,setBasket] = React.useState(false);
 
     function onClickToBasket(){
@@ -23,6 +23,9 @@ const Scooter = ({title,acc,power,mileage,weight,price,image,onPlus, isInCart, o
                     <h4 className="scooter__forWho">
                         {forWho}
                     </h4>
+                    <h5 className="scooter__category">
+                        {category}
+                    </h5>
                     <img className='scooter__icon' src={image} alt=""/>
 
                     <div className="scooter__content">
@@ -42,7 +45,7 @@ const Scooter = ({title,acc,power,mileage,weight,price,image,onPlus, isInCart, o
                         </div>
                         <div className="scooter__price">
                             <p className="scooter__priceText">
-                                {price}
+                                {price} Сом
                             </p>
                             <div className="scooter__priceIcons">
                                 <img  onClick={() => {

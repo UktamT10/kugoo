@@ -1,0 +1,41 @@
+.footerTop{
+  background: rgb(111, 115, 238);
+  padding: 24px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 250px;
+  &__title{
+    color: rgb(255, 255, 255);
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 26px;
+    text-transform: uppercase;
+  }
+  &__input{
+    border-radius: 5px;
+    background: rgba(255, 255, 255, 0.2);
+    border: none;
+    padding: 10px;
+    color: rgb(255, 255, 255);
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 23px;
+    width: 300px;
+  }
+  &__btn{
+    color: rgb(111, 115, 238);
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 23px;
+    cursor: pointer;
+    border-radius: 5px;
+    padding: 10px 15px;
+    border: none;
+    background: rgb(255, 255, 255);
+    margin-left: 10px;
+  }
+}
+.footerTop__input::placeholder{
+  color: rgb(255, 255, 255);
+}

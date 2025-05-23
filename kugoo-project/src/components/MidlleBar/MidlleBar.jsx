@@ -1,5 +1,6 @@
 import React from 'react';
 import './midlle.scss'
+import {Link} from 'react-router-dom';
 
 const MidlleBar = ({onCatalog, onCart}) => {
 
@@ -8,9 +9,11 @@ const MidlleBar = ({onCatalog, onCart}) => {
             <div className="midlleBar">
 
                 <div className="midlleBar__left">
-                    <h1 className="midlleBar__title">
-                        KUGOO
-                    </h1>
+                    <Link to='/'>
+                        <h1 className="midlleBar__title">
+                            KUGOO
+                        </h1>
+                    </Link>
                     <button onClick={onCatalog} className="midlleBar__btn">
                         Каталог
                     </button>

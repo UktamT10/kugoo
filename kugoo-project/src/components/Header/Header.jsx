@@ -1,12 +1,22 @@
-import React, {useState} from 'react';
+import React, {useEffect} from 'react';
 import TopBar from '../TopBar/TopBar';
 import './header.scss';
 import MidlleBar from "../MidlleBar/MidlleBar";
+import axios from "axios";
+import Navbar from "../Navbar/Navbar";
 
 const Header = ({items, onRemove, cartCount, total}) => {
-    const [catalog, setCatalog] = React.useState(false)
-    const [cart, setCart] = React.useState(false)
+    const [catalog, setCatalog] = React.useState(false);
+    const [loading, setLoading] = React.useState([]);
+    const [cart, setCart] = React.useState(false);
+    const [active, setActive] = React.useState(null);
+    const activeItem = loading.find(item => item.id === active);
 
+    useEffect(() => {
+        axios.get('http://localhost:3000/categoryz').then((res) => {
+            setLoading(res.data);
+        })
+    }, []);
 
     function handleCatalogClick() {
         setCatalog(!catalog)
@@ -16,16 +26,38 @@ const Header = ({items, onRemove, cartCount, total}) => {
         setCart(!cart)
     }
 
+    function handleBabelClick(id) {
+        setActive(prevId => prevId === id ? null : id);
+    }
+
     return (
         <header className="header">
-            <div style={{display: catalog ? 'flex' : 'none'}} className="midlleBar__overlay">
-                <div className="midlleBar__catalog">
-                    asdads
-                    <h1 onClick={handleCatalogClick}>
-                        saddsaasd
-                    </h1>
+            <div onClick={handleCatalogClick} style={{display: catalog ? 'flex' : 'none'}} className="midlleBar__overlay">
+                <div onClick={(e) => e.stopPropagation()} className="midlleBar__catalog">
+                    <div className="midlleBar__catalogLeft">
+                        {loading.map((item) => (
+                            <h1
+                                onClick={() => handleBabelClick(item.id)}
+                                className={active === item.id ? 'midlleBar__catalogTitleColor' : 'midlleBar__catalogTitle'}
+                                key={item.id}
+                            >
+                                {item.name}
+                            </h1>
+                        ))}
+                    </div>
+                    <div className="midlleBar__catalogRight">
+                        <div className="midlleBar__catalogFirst">
+                            <h3 className="midlleBar__catalogRightTitle">Особенности</h3>
+                            {activeItem && (
+                                <p className='midlleBar__catalogRightSubtitle'>
+                                    {activeItem.peculiarities}
+                                </p>
+                            )}
+                        </div>
+                    </div>
                 </div>
             </div>
+
             <div onClick={handleCartClick} style={{display: cart ?'flex' : 'none'}} className="cart-overlay">
                         <div onClick={(e) => e.stopPropagation()} className="cart-content">
                     <span className='cart-spann'>
@@ -80,6 +112,7 @@ const Header = ({items, onRemove, cartCount, total}) => {
                 <TopBar />
                 <MidlleBar onCart={handleCartClick} onCatalog = {handleCatalogClick} />
             </div>
+            <Navbar/>
         </header>
     );
 };
